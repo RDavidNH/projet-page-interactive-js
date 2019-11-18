@@ -87,3 +87,13 @@ nextArrow.addEventListener('click', function (event) {
     row.prepend(lastCard);
 });
 
+
+var prevArrow = jumbotron.getElementsByTagName('a')[0];
+
+prevArrow.addEventListener('click', function (event) {
+    event.preventDefault();
+    let firstCard = cards[0].parentNode;
+    row.append(firstCard);
+});
+
+
