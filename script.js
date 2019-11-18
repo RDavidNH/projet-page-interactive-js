@@ -27,3 +27,16 @@ var editBtn = card1.getElementsByTagName('button')[1];
 editBtn.addEventListener('click', function (event) {
     card1.style.color = 'red';
 });
+
+
+var card2 = document.getElementsByClassName('card')[1];
+var editBtn2 = card2.getElementsByTagName('button')[1];
+
+editBtn2.addEventListener('click', function (event) {
+    if (card2.style.color != 'green') {
+        card2.style.color = 'green';
+    }
+    else {
+        card2.style.color = '';
+    }
+});
