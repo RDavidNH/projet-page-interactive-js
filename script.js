@@ -19,3 +19,11 @@ hamMenu.addEventListener('click', function (event) {
     navbarHeader.classList.toggle('collapse');
         
 });
+
+
+var card1 = document.getElementsByClassName('card')[0];
+var editBtn = card1.getElementsByTagName('button')[1];
+
+editBtn.addEventListener('click', function (event) {
+    card1.style.color = 'red';
+});
