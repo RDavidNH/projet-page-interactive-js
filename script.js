@@ -76,3 +76,14 @@ for (let card of cards) {
     
 }
 
+
+var jumbotron = document.getElementsByClassName('jumbotron')[0];
+var nextArrow = jumbotron.getElementsByTagName('a')[1];
+var row = document.getElementsByClassName('row')[1];
+
+nextArrow.addEventListener('click', function (event) {
+    event.preventDefault();
+    let lastCard = cards[cards.length - 1].parentNode;
+    row.prepend(lastCard);
+});
+
