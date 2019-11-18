@@ -49,3 +49,30 @@ header.addEventListener('dblclick', function (event) {
     twbtsCdn.toggleAttribute('disabled');
 
 });
+
+
+var cards = document.getElementsByClassName('card');
+
+for (let card of cards) {
+
+    let viewBtn = card.getElementsByTagName('button')[0];
+
+    viewBtn.addEventListener('mouseenter', function (event) {
+        let txt = card.getElementsByClassName('card-text')[0];
+        let img = card.getElementsByTagName('img')[0];
+
+        if (!card.classList.contains('min')) {
+            txt.style.display = 'none';
+            img.style.width = '20%';
+            card.classList.add('min');
+        }
+        else {
+            txt.style.display = 'block';
+            img.style.width = '100%';
+            card.classList.remove('min');
+        }
+
+    });
+    
+}
+
