@@ -40,3 +40,12 @@ editBtn2.addEventListener('click', function (event) {
         card2.style.color = '';
     }
 });
+
+var navbar = document.getElementsByClassName('navbar')[0];
+var header = document.getElementsByTagName('header')[0];
+var twbtsCdn = document.getElementsByTagName('link')[0];
+
+header.addEventListener('dblclick', function (event) {
+    twbtsCdn.toggleAttribute('disabled');
+
+});
